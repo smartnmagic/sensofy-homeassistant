@@ -1,0 +1,40 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connect to Sensofy",
+        "description": "Enter your Sensofy server address and an API key. Create a key in the Sensofy web app under Settings \u2192 Integrations.",
+        "data": {
+          "host": "Server URL",
+          "api_key": "API key"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Re-authenticate Sensofy",
+        "description": "Your API key was rejected. Enter a new key from Settings \u2192 Integrations.",
+        "data": {
+          "api_key": "API key"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Failed to connect. Check the server URL and your network.",
+      "invalid_auth": "The API key was rejected. Check that it is correct and active."
+    },
+    "abort": {
+      "already_configured": "This Sensofy account is already configured.",
+      "reauth_successful": "Re-authentication was successful."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Sensofy options",
+        "data": {
+          "poll_interval": "Polling interval (seconds)",
+          "stale_after_minutes": "Mark sensor unavailable after (minutes, 0 = never)"
+        }
+      }
+    }
+  }
+}

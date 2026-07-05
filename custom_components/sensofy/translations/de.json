@@ -1,0 +1,40 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Mit Sensofy verbinden",
+        "description": "Gib die Adresse deines Sensofy-Servers und einen API-Schl\u00fcssel ein. Erstelle einen Schl\u00fcssel in der Sensofy-Web-App unter Einstellungen \u2192 Integrationen.",
+        "data": {
+          "host": "Server-URL",
+          "api_key": "API-Schl\u00fcssel"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Sensofy erneut authentifizieren",
+        "description": "Dein API-Schl\u00fcssel wurde abgelehnt. Gib einen neuen Schl\u00fcssel unter Einstellungen \u2192 Integrationen ein.",
+        "data": {
+          "api_key": "API-Schl\u00fcssel"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Verbindung fehlgeschlagen. Pr\u00fcfe die Server-URL und dein Netzwerk.",
+      "invalid_auth": "Der API-Schl\u00fcssel wurde abgelehnt. Pr\u00fcfe, ob er korrekt und aktiv ist."
+    },
+    "abort": {
+      "already_configured": "Dieses Sensofy-Konto ist bereits konfiguriert.",
+      "reauth_successful": "Die erneute Authentifizierung war erfolgreich."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Sensofy-Optionen",
+        "data": {
+          "poll_interval": "Abrufintervall (Sekunden)",
+          "stale_after_minutes": "Sensor als nicht verf\u00fcgbar markieren nach (Minuten, 0 = nie)"
+        }
+      }
+    }
+  }
+}
